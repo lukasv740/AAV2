@@ -31,7 +31,7 @@ fi
 # General script:
 output="$(basename ${contigs} | cut -d '.' -f1)"	# Gets the prefix name of contigs file.
 query_name="$(basename ${query} | cut -d '.' -f1)"	# Gets the prefix name of query file.
-database_output="${databases}/${output}"			# Subdir for database location.
+database_output="${databases}/${output}"		# Subdir for database location.
 blastn_results_output="${blastn_results}/${output}"	# Subdir for blastn results.
 
 # Check if database exists, if not, create one:
