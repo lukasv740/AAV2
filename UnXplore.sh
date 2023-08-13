@@ -46,7 +46,7 @@ fi
 
 # Perform blastn for the query:
 echo -e "Performing BLASTN.\n"
-blastn -db ${database_output}/${output} -query ${query} -outfmt 6 -num_threads 8 -out ${blastn_results_output}/${query_name}.txt
+blastn -db ${database_output}/${output} -query ${query} -outfmt 6 -num_threads 8 -out ${blastn_results_output}/${query_name}.txt 
 
 # Display results:
 count="$(cat ${blastn_results_output}/${query_name}.txt | wc -l)"
