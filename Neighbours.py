@@ -19,8 +19,7 @@ parser.add_argument("accession_ID", help="Input GenBank accession ID")
 parser.add_argument("-query", required=True, help="Input your GenBank ID query")
 parser.add_argument("-neighbours_file", help="Input a txt file with neighbour list")
 parser.add_argument("-output", required=True, help="Specify output prefix name, if test is run multiple times")
-# args = parser.parse_args()
-args = parser.parse_args(["NC_001401.2", "-query=NC_001401.2", "-neighbours_file=../Data/aav2_neighbours.txt", "-output=AAV2"])
+args = parser.parse_args()
 
 
 # File pathways:
@@ -142,3 +141,5 @@ with open(f"{neighbours}/{output}_general.stat", "w", newline="\n") as gen_out:
     gen_out.write("Neighbours used:\n")
     for id in neighbours_list:
         gen_out.write(f"{id}\n")
+
+print(f"\nFiles for neighbour filtering have been created and saved at {neighbours}\n")
