@@ -111,12 +111,11 @@ bash tree.sh <Accession ID> <fasta_file> <alignment_file> <output> <model>
 The FASTA alignment files were provided by Dr. Richard Orton that were obtained from the Ho et al., 2022 study. The script takes consensus sequences and aligns to the alignment file using ‘mafft’ command. The final alignment file is then used by ‘iqtree2’ to generate a phylogenetic tree with a specified model. The phylogenetic tree was analysed using FigTree software.
 
 ### Summary:
-The Serratus workflow was performed for GenBank IDs `NC_001401.2` and `NC_001454.2`, which correspond to Adeno-associated virus 2 (AAV2) and Human adeno virus F (HAdV-F), respectively. The neighbour files for AAV2 and HAdV-F with their neighbour sequence GenBank IDs are available in `Data/aav2_neighbours.txt` and `Data/havf_neighbours.txt`, respectively.
+The Serratus workflow was performed for GenBank IDs `NC_001401.2` and `NC_001454.2`, which correspond to Adeno-associated virus 2 (AAV2) and Human adeno virus F (HAdV-F), respectively. The neighbour files for AAV2 and HAdV-F with their neighbour sequence GenBank IDs are available in [aav2_neighbours](Data/aav2_neighbours.txt) and [hadvf_neighbours](Data/havf_neighbours.txt), respectively.
 
 The alignment sequences from the studies used for phylogenetic tree generation are availabe in `Data/paper_aav2_alignment.fasta` and `Data/hadv41_align.fasta` for AAV2 and HAdV-F respectively.
 
 All the scripts create required subdirectories automatically and inform user through the terminal where all the data is saved. Finally, the script is versatile and should work with any other sequences of interest that are available on Serratus database.
-
 
 
 
