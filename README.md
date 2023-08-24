@@ -116,6 +116,3 @@ The Serratus workflow was performed for GenBank IDs `NC_001401.2` and `NC_001454
 The alignment sequences from the studies used for phylogenetic tree generation are availabe in `Data/paper_aav2_alignment.fasta` and `Data/hadv41_align.fasta` for AAV2 and HAdV-F respectively.
 
 All the scripts create required subdirectories automatically and inform user through the terminal where all the data is saved. Finally, the script is versatile and should work with any other sequences of interest that are available on Serratus database.
-
-
-
